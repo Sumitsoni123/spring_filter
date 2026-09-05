@@ -6,10 +6,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class StudentService {
 
-    public void createStudent(Student student) {
+    public Student createStudent(Student student) {
         // Logic to create a student
-        System.out.println("Student Created");
-        System.out.println(student.getName());
-        System.out.println(student.getEmail());
+        Student std = new Student();
+        std.setName(student.getName());
+        std.setEmail(student.getEmail());
+        return std;
     }
 }
