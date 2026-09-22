@@ -5,6 +5,7 @@ import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+// This is another way to config filter without using @Component on DummyFilter Class
 @Configuration
 public class FilterConfig {
 
